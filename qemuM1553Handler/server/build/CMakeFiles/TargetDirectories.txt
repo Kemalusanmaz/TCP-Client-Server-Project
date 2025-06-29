@@ -1,0 +1,3 @@
+C:/Users/T12022061821/Desktop/TCP Server-Client Project/qemuM1553Handler/server/build/CMakeFiles/Server.dir
+C:/Users/T12022061821/Desktop/TCP Server-Client Project/qemuM1553Handler/server/build/CMakeFiles/edit_cache.dir
+C:/Users/T12022061821/Desktop/TCP Server-Client Project/qemuM1553Handler/server/build/CMakeFiles/rebuild_cache.dir
