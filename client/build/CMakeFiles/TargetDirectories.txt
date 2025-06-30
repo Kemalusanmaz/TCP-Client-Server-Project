@@ -1,3 +1,0 @@
-C:/Users/T12022061821/Desktop/TCP Server-Client Project/client/build/CMakeFiles/Client.dir
-C:/Users/T12022061821/Desktop/TCP Server-Client Project/client/build/CMakeFiles/edit_cache.dir
-C:/Users/T12022061821/Desktop/TCP Server-Client Project/client/build/CMakeFiles/rebuild_cache.dir
