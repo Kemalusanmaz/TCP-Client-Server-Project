@@ -101,11 +101,26 @@ CMakeFiles/Server.dir/src/serverMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/serverMain.cpp.s"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\src\serverMain.cpp" -o CMakeFiles\Server.dir\src\serverMain.cpp.s
 
+CMakeFiles/Server.dir/src/serverObject.cpp.obj: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/serverObject.cpp.obj: CMakeFiles/Server.dir/includes_CXX.rsp
+CMakeFiles/Server.dir/src/serverObject.cpp.obj: C:/Users/T12022061821/Desktop/TCP\ Server-Client\ Project/server/src/serverObject.cpp
+CMakeFiles/Server.dir/src/serverObject.cpp.obj: CMakeFiles/Server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/src/serverObject.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Server.dir/src/serverObject.cpp.obj -MF CMakeFiles\Server.dir\src\serverObject.cpp.obj.d -o CMakeFiles\Server.dir\src\serverObject.cpp.obj -c "C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\src\serverObject.cpp"
+
+CMakeFiles/Server.dir/src/serverObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/serverObject.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\src\serverObject.cpp" > CMakeFiles\Server.dir\src\serverObject.cpp.i
+
+CMakeFiles/Server.dir/src/serverObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/serverObject.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\src\serverObject.cpp" -o CMakeFiles\Server.dir\src\serverObject.cpp.s
+
 CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj: CMakeFiles/Server.dir/includes_CXX.rsp
 CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj: C:/Users/T12022061821/Desktop/TCP\ Server-Client\ Project/common/src/messageHandler.cpp
 CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj: CMakeFiles/Server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj"
 	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj -MF CMakeFiles\Server.dir\C_\Users\T12022061821\Desktop\TCP_Server-Client_Project\common\src\messageHandler.cpp.obj.d -o CMakeFiles\Server.dir\C_\Users\T12022061821\Desktop\TCP_Server-Client_Project\common\src\messageHandler.cpp.obj -c "C:\Users\T12022061821\Desktop\TCP Server-Client Project\common\src\messageHandler.cpp"
 
 CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.i: cmake_force
@@ -120,6 +135,7 @@ CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/co
 Server_OBJECTS = \
 "CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/setup.cpp.obj" \
 "CMakeFiles/Server.dir/src/serverMain.cpp.obj" \
+"CMakeFiles/Server.dir/src/serverObject.cpp.obj" \
 "CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj"
 
 # External object files for target Server
@@ -127,12 +143,13 @@ Server_EXTERNAL_OBJECTS =
 
 Server.exe: CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/setup.cpp.obj
 Server.exe: CMakeFiles/Server.dir/src/serverMain.cpp.obj
+Server.exe: CMakeFiles/Server.dir/src/serverObject.cpp.obj
 Server.exe: CMakeFiles/Server.dir/C_/Users/T12022061821/Desktop/TCP_Server-Client_Project/common/src/messageHandler.cpp.obj
 Server.exe: CMakeFiles/Server.dir/build.make
 Server.exe: CMakeFiles/Server.dir/linkLibs.rsp
 Server.exe: CMakeFiles/Server.dir/objects1.rsp
 Server.exe: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Server.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\T12022061821\Desktop\TCP Server-Client Project\server\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Server.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Server.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

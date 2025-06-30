@@ -1293,8 +1293,4 @@ CMakeFiles/Client.dir/src/clientObject.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/deque \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_deque.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/deque.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_queue.h \
- C:/msys64/ucrt64/include/c++/14.2.0/fstream \
- C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
- C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/fstream.tcc
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_queue.h

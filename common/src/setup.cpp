@@ -25,8 +25,7 @@ void Setup::createSocket() {
   m_acceptor.bind(endpoint);
   m_acceptor.listen();
 
-  std::cout << "Server is listening on port " << m_port << "..."
-            << std::endl;
+  std::cout << "Server is listening on port " << m_port << "..." << std::endl;
 
   m_acceptor.accept(m_socket);
   std::cout << "Client connected!" << std::endl;
@@ -88,8 +87,7 @@ void Setup::onConnect(const boost::system::error_code &errorCode) {
 }
 
 /**
- * This function provides that client can send a message packet to the Server
- * which is Qemu in this case.
+ * This function provides that client can send a message packet.
  */
 void Setup::send(const std::string &message) {
   boost::asio::async_write(
@@ -104,7 +102,7 @@ void Setup::send(const std::string &message) {
  * completed.
  */
 void Setup::onSend(const boost::system::error_code &errorCode,
-                         const std::size_t &length) {
+                   const std::size_t &length) {
   if (!errorCode) { // If there is no error while a message is tried to sent to
                     // the Server.
     std::cout << "Sent message: " << length << " bytes." << std::endl;
@@ -114,8 +112,7 @@ void Setup::onSend(const boost::system::error_code &errorCode,
 }
 
 /**
- * This function provides that client can receive a message packet from the
- * Server which is Qemu in this case.
+ * This function provides that client can receive a message packet
  */
 void Setup::receive() {
   boost::asio::async_read_until(
@@ -137,9 +134,7 @@ void Setup::onReceive(const boost::system::error_code &errorCode) {
     std::istream bufferStream(&m_receivedBuffer);
     std::string receivedMessage((std::istreambuf_iterator<char>(bufferStream)),
                                 std::istreambuf_iterator<char>());
-    std::cout << receivedMessage << std::endl;
-    // pushData(receivedMessage);
-    // std::cout << data << std::endl;
+    std::cout << "Received Message: " << receivedMessage << std::endl;
 
     receive(); // This function is invoked to get a message continuously
   } else {

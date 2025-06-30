@@ -1,8 +1,8 @@
 #include "../include/clientObject.hpp"
 
 int main() {
-  ClientObject q;
-  q.initialize();
-  q.receiveMessage();
+  ClientObject clientObj;
+  clientObj.initialize();
+  clientObj.receiveMessage();
   return 0;
 }

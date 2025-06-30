@@ -22,7 +22,7 @@ link_directories("C:/msys64/ucrt64/lib")
 include_directories(include ../common/include)
 
 # definition of source file
-set(SOURCES ../common/src/setup.cpp src/serverMain.cpp ../common/src/messageHandler.cpp)
+set(SOURCES ../common/src/setup.cpp src/serverMain.cpp src/serverObject.cpp ../common/src/messageHandler.cpp)
 
 # define compile target
 add_executable(Server ${SOURCES})

@@ -200,6 +200,30 @@ src/serverMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/serverMain.cpp.s
 .PHONY : src/serverMain.cpp.s
 
+src/serverObject.obj: src/serverObject.cpp.obj
+.PHONY : src/serverObject.obj
+
+# target to build an object file
+src/serverObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/serverObject.cpp.obj
+.PHONY : src/serverObject.cpp.obj
+
+src/serverObject.i: src/serverObject.cpp.i
+.PHONY : src/serverObject.i
+
+# target to preprocess a source file
+src/serverObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/serverObject.cpp.i
+.PHONY : src/serverObject.cpp.i
+
+src/serverObject.s: src/serverObject.cpp.s
+.PHONY : src/serverObject.s
+
+# target to generate assembly for a file
+src/serverObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/src/serverObject.cpp.s
+.PHONY : src/serverObject.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... src/serverMain.obj
 	@echo ... src/serverMain.i
 	@echo ... src/serverMain.s
+	@echo ... src/serverObject.obj
+	@echo ... src/serverObject.i
+	@echo ... src/serverObject.s
 .PHONY : help
 
 

@@ -19,8 +19,8 @@ public:
 
   /**
    * Establish async connection with server
-   * @param serverIP Qemu IP Address.
-   * @param serverPort Qemu Port Number.
+   * @param serverIP Server IP Address.
+   * @param serverPort Server Port Number.
    */
   void connect();
   /**
@@ -29,16 +29,16 @@ public:
    */
   bool isConnected();
   /**
-   * Send the message to the Qemu
-   * @param message a message that is sent to the Qemu.
+   * Send message
+   * @param message a message that is sent.
    */
   void send(const std::string &message);
   /**
-   * Receive message form the Qemu
+   * Receive message
    */
   void receive();
   /**
-   * Close the Tcp connection with Qemu
+   * Close the Tcp connection between Server and Client
    */
   void disconnect();
 
@@ -46,7 +46,7 @@ public:
    * boost::asio::streambuf is noc copyable object. Therefore, the reference of
    * object is returned.
    * @param errorCode error code if there is an problem during connection.
-   * @return m_receivedBuffer stores received data taking from Qemu..
+   * @return m_receivedBuffer stores received data
    */
   bool getNextReceivedData(std::string &outData);
 
@@ -61,6 +61,10 @@ public:
    * empty.
    */
   std::queue<std::string> &getDataQueue() { return m_dataQueue; }
+
+  std::string getIp() const { return m_ip; }
+
+  int getPort() const { return m_port; }
 
 private:
   /**
@@ -102,8 +106,8 @@ private:
       m_condition; // Condition variable used for synchronizing threads and
                    // checking if the queue is empty.
   boost::asio::ip::tcp::acceptor m_acceptor;
-  std::string m_ip; // IP address that QEMU sw is deployed.
-  int m_port;       // Port number for QEMU connection
+  std::string m_ip; // IP address that Server sw is deployed.
+  int m_port;       // Port number for Server connection
 };
 
 #endif // __SETUP_HPP__
