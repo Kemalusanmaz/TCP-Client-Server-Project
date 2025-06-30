@@ -1,0 +1,77 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Client - Build",
+			"type": "shell",
+			"group": {},
+			"command": [
+				"./build.bat"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/client/scripts/"
+			},
+			"runOptions": {
+				"reevaluateOnRerun": false
+			}
+		},
+		{
+			"label": "Client - Run",
+			"type": "shell",
+			"group": "test",
+			"command": [
+				"./run.bat"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/client/scripts/"
+			}
+		},
+		{
+			"label": "Client - Clean",
+			"type": "shell",
+			"group": "test",
+			"command": [
+				"./clean.bat"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/client/scripts/"
+			}
+		},
+		{
+			"label": "Server - Build",
+			"type": "shell",
+			"group": {},
+			"command": [
+				"./build.bat"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/server/scripts/"
+			},
+			"runOptions": {
+				"reevaluateOnRerun": false
+			}
+		},
+		{
+			"label": "Server - Run",
+			"type": "shell",
+			"group": "test",
+			"command": [
+				"./run.bat"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/server/scripts/"
+			}
+		},
+		{
+			"label": "Server - Clean",
+			"type": "shell",
+			"group": "test",
+			"command": [
+				"./clean.bat"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/server/scripts/"
+			}
+		}
+	]
+}

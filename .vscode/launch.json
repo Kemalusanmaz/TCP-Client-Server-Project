@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TCP Server Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/server/build/Server.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/server/build/",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "TCP Client Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/client/build/Client.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/client/build/",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

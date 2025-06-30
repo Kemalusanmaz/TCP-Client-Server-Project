@@ -55,7 +55,7 @@ ipch/
 *.temp
 
 # IDE'ye özel ayarlar (VS Code)
-.vscode/
+# .vscode/
 
 # ####################### #
 # İşletim Sistemi Dosyaları #
