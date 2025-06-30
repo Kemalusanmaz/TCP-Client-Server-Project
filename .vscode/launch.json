@@ -8,9 +8,9 @@
       "name": "TCP Server Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/qemuM1553Handler/server/build/Server.exe",
+      "program": "${workspaceFolder}/server/build/Server.exe",
       "args": [],
-      "cwd": "${workspaceFolder}/qemuM1553Handler/server/build/",
+      "cwd": "${workspaceFolder}/server/build/",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
@@ -23,9 +23,9 @@
       "name": "TCP Client Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/qemuM1553Handler/client/build/Client.exe",
+      "program": "${workspaceFolder}/client/build/Client.exe",
       "args": [],
-      "cwd": "${workspaceFolder}/qemuM1553Handler/client/build/",
+      "cwd": "${workspaceFolder}/client/build/",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
