@@ -1,0 +1,72 @@
+# ####################### #
+# Derleyici/Build Sistemi #
+# ####################### #
+
+# CMake tarafından oluşturulan dosyalar ve klasörler
+build/
+Build/
+CMakeCache.txt
+CMakeLists.txt.user
+CMakeFiles/
+cmake-build-*/
+CTestTestfile.cmake
+compile_commands.json
+
+# Visual Studio tarafından oluşturulan dosyalar ve klasörler
+*.sln.DotSettings.user
+*.suo
+*.user
+*.vcxproj.filters
+*.vcxproj.user
+Debug/
+Release/
+x64/
+Win32/
+bin/
+obj/
+ipch/
+.vs/
+*.sdf
+*.opensdf
+
+# ####################### #
+# Çalıştırılabilir ve Kütüphane Dosyaları #
+# ####################### #
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.out
+
+# ####################### #
+# Diğer Yaygın Dosyalar #
+# ####################### #
+
+# Nesne dosyaları
+*.o
+*.obj
+*.pch
+
+# Log ve geçici dosyalar
+*.log
+*.tmp
+*.temp
+
+# IDE'ye özel ayarlar (VS Code)
+.vscode/
+
+# ####################### #
+# İşletim Sistemi Dosyaları #
+# ####################### #
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
